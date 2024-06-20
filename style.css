@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  --bg-color: #eef0f4;
+  --color: #333;
+  --togglebg: #333;
+  --roundcolor: #eef0f4;
+  --toggleslider: #111;
+  --togglesliderColor: #111;
+  --filter1: drop-shadow(-8px -8px 12px #ffffff)
+    drop-shadow(8px 8px 12px #c3c5c8);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  
+  color: var(--color);
+  font-family: "Muli", sans-serif;
+  background-color: var(--bg-color);
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 0;
+  border-color: #111;
+}
+
+.container {
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  filter: var(--filter1);
+  margin: auto;
+  background-color:lightcyan;
+  border-color: #111;
+}
+
+.result-container {
+  background-color: var(--bg-color);
+  border: 12px solid var(--bg-color);
+  filter: var(--filter2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 35px;
+  border-style: solid;
+}
+
+textarea {
+  background: none;
+  border:#111;
+  
+  font-size: 20px;
+  margin-top: auto;
+  outline: none;
+  resize: none;
+  
+  
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border:#111;
+
+}
+
+.buttons {
+    display: flex;
+   
+    
+}
+
+.btn {
+  width: 50%;
+  border: black;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 12px 5px 7px 5px;
+  filter: var(--filter2);
+  border-style: solid;
+}
+
+.btn:hover {
+  filter: var(--filter3);
+  transition: 0.4s ease-in-out;
+  border-style: solid;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
